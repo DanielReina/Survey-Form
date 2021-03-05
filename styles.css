@@ -1,0 +1,102 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lemonada&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('https://image.freepik.com/vector-gratis/vector-fondo-fiesta-cumpleanos-colorido-confeti-papel-volador_1053-1040.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 40%;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    background-color:rgba(255, 255, 255, 0.9);
+    display: flex;    
+    flex-direction: column;
+    font-family: 'Lemonada', cursive;
+    font-weight: 600;
+    
+}
+.head{
+    background-color: rgba(204, 204, 204, 0.4);
+    border-bottom: 1px solid black;
+}
+#title{
+    margin: 5px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #FFBF00;
+    text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+}
+#description{
+    margin: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(9, 9, 70);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+#survey-form{
+    display: flex;    
+    flex-direction: column;
+    margin: 25px;
+}
+label{
+    color:rgb(7, 75, 75);
+    margin-top:40px;
+}
+.drinks, .snacks, .music, .decorated, .accompanied, .alone{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color:#ff7b00;
+    font-weight: 900;
+    margin-top: 20px;
+}
+span{
+    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color:rgb(2, 27, 27);
+    font-weight: 900;
+}
+input, select{
+    width: 250px;
+    height: 30px;
+}
+input[type='checkbox'], input[type='radio']{
+    width: auto;
+    height: auto;
+}
+button{
+    margin-top: 20px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: green;
+    border-radius: 5px;
+}
+@media(max-width:1200px){
+    .container{
+    width: 80%;   
+}
+}
+@media(max-width:400px){
+    .container{
+    width: 100%;   
+}
+input, select{
+    width: 100%;
+    height: 25px;
+}
+}
